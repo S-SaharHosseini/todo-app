@@ -1,8 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: "AntipastoPro";
+    src: url("../font/AntipastoPro-Thin_trial\ 2.ttf");
+}
+body {
+    font-family: "AntipastoPro"
+}
+.main {
+  @apply w-full h-screen overflow-hidden;
+}
+.todo-footer {
+  background-image: url("../image/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.todo-main {
+  background-color: #9cc3c4;
+}
+.todo-wrapper {
+  background-color: #ecece1;
+}
+.todo-main h1 {
+    color: #ecece1;  
 }
