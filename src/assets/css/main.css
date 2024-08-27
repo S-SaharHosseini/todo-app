@@ -5,13 +5,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  line-height: 0;
 }
 @font-face {
   font-family: "AntipastoPro";
   src: url("../font/AntipastoPro-Thin_trial\ 2.ttf");
 }
+@font-face {
+  font-family: "inter";
+  src: url("../font/Inter-VariableFont_opsz\,wght.ttf");
+}
 body {
   font-family: "AntipastoPro";
+  cursor: default;
 }
 .main {
   @apply w-full h-screen overflow-hidden;
@@ -27,10 +33,67 @@ body {
   background-color: #9cc3c4;
 }
 .todo-wrapper {
-  @apply h-screen sm:w-10/12 lg:w-5/12 lg:mt-10 sm:mt-32 rounded-tl-full rounded-tr-full;
+  @apply h-screen sm:w-10/12 lg:w-5/12 lg:mt-10 sm:mt-32 rounded-tl-full rounded-tr-full flex justify-start flex-col items-center;
   background-color: #ecece1;
 }
 .todo-main h1 {
   @apply absolute lg:left-10 lg:top-16 lg:text-9xl sm:text-5xl sm:top-5;
+  color: #ecece1;
+}
+.todo-wrapper button {
+  @apply lg:h-12 rounded-full  absolute right-3 top-3 lg:px-4 sm:h-8 sm:px-2;
+  background-color: #81a7a8;
+  color: #ecece1;
+}
+.todo-wrapper form {
+  @apply border-2 rounded-full h-fit p-2 lg:mt-28 sm:mt-20 lg:w-8/12 sm:w-10/12 relative;
+  border-color: #9cc3c450;
+}
+input {
+  outline: none;
+  font-family: "inter";
+  color: #6d8f91;
+  @apply w-full lg:h-14 rounded-full pl-3 sm:h-10;
+}
+input::placeholder {
+  color: #9cc3c48e;
+}
+.todo-list-wrapper {
+  @apply lg:mt-20 sm:mt-16 w-10/12;
+}
+.todo-list {
+  @apply flex items-center flex-col w-full h-80 overflow-y-scroll pr-5 pb-10;
+}
+.todo-list-item {
+  @apply flex lg:justify-between lg:flex-row sm:flex-col sm:justify-start lg:items-center sm:items-start w-full mb-3;
+}
+.todo-list-item p {
+  font-family: "inter";
+  @apply text-base font-light;
+  color: #ecece1;
+}
+.todo-list-item-text {
+  @apply bg-slate-400 h-fit rounded-full py-3 px-5;
+  background-color: #6d8f91;
+}
+.todo-action {
+  @apply hidden group-hover:flex  flex-row-reverse sm:mt-2 lg:mt-0;
+}
+.todo-action i {
+  @apply cursor-pointer text-xl ml-2;
+  color: #9cc3c4;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #9cc3c450;
+}
+::-webkit-scrollbar-thumb {
+  background: #81a7a8;
+  border-radius: 10px;
+}
+button i {
   color: #ecece1;
 }
