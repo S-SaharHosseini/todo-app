@@ -46,7 +46,7 @@ body {
   color: #ecece1;
 }
 .todo-wrapper form {
-  @apply border-2 rounded-full h-fit p-2 lg:mt-28 sm:mt-20 lg:w-8/12 sm:w-10/12 relative;
+  @apply border-2 rounded-full h-fit p-2 lg:mt-28 sm:mt-20 xxl:mt-36 lg:w-8/12 sm:w-10/12 relative;
   border-color: #9cc3c450;
 }
 input {
@@ -59,10 +59,10 @@ input::placeholder {
   color: #9cc3c48e;
 }
 .todo-list-wrapper {
-  @apply lg:mt-20 sm:mt-16 w-10/12;
+  @apply lg:mt-20 sm:mt-16 xxl:mt-28 w-10/12;
 }
 .todo-list {
-  @apply flex items-center flex-col w-full h-80 overflow-y-scroll pr-5 pb-10;
+  @apply flex items-center flex-col w-full h-80 xxl:h-[680px] overflow-y-scroll pr-5 pb-10;
 }
 .todo-list-item {
   @apply flex lg:justify-between lg:flex-row sm:flex-col sm:justify-start lg:items-center sm:items-start w-full mb-3;
