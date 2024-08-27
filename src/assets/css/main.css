@@ -7,11 +7,11 @@
   box-sizing: border-box;
 }
 @font-face {
-    font-family: "AntipastoPro";
-    src: url("../font/AntipastoPro-Thin_trial\ 2.ttf");
+  font-family: "AntipastoPro";
+  src: url("../font/AntipastoPro-Thin_trial\ 2.ttf");
 }
 body {
-    font-family: "AntipastoPro"
+  font-family: "AntipastoPro";
 }
 .main {
   @apply w-full h-screen overflow-hidden;
@@ -20,13 +20,17 @@ body {
   background-image: url("../image/bg.jpg");
   background-position: center;
   background-size: cover;
+  @apply h-2/6 w-full;
 }
 .todo-main {
+  @apply h-4/6 w-full flex justify-center;
   background-color: #9cc3c4;
 }
 .todo-wrapper {
+  @apply h-screen sm:w-10/12 lg:w-5/12 lg:mt-10 sm:mt-32 rounded-tl-full rounded-tr-full;
   background-color: #ecece1;
 }
 .todo-main h1 {
-    color: #ecece1;  
+  @apply absolute lg:left-10 lg:top-16 lg:text-9xl sm:text-5xl sm:top-5;
+  color: #ecece1;
 }
