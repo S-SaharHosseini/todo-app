@@ -76,6 +76,9 @@ input::placeholder {
   @apply bg-slate-400 h-fit rounded-full py-3 px-5;
   background-color: #6d8f91;
 }
+.todo-done {
+  background-color: #3d5152;
+}
 .todo-action {
   @apply hidden group-hover:flex  flex-row-reverse sm:mt-2 lg:mt-0;
 }
@@ -96,4 +99,11 @@ input::placeholder {
 }
 button i {
   color: #ecece1;
+}
+.no-todo {
+  @apply w-full  mt-16 flex justify-center pt-10
+}
+.no-todo p {
+  font-family: "inter";
+  color: #6d8f91;
 }
